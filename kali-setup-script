@@ -7,7 +7,7 @@ fi
 
 cd $HOME 
 
-echo "Resetting root pass" 
+echo "Resetting kali pass" 
 
 passwd kali  
 
@@ -47,11 +47,13 @@ apt-get install cherrytree -y
 
 apt-get install filezilla -y  
 
-wget https://code.visualstudio.com/download# 
+read -t 5 -p "Opening Visual Studio Code in a Browser" 
+firefox https://code.visualstudio.com/Download#
 
-cd Downloads  
+read -p "Once you have downloaded the specific package press any key" 
 
-sudo apt install ./code_amd64.deb 
+#code_1.73.1-1667967334_amd64
+apt install ./code_[0-9].[0-100].[0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_amd64.deb
 
 #ohmyzsh 
 
