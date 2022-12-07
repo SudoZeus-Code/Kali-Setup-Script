@@ -33,7 +33,7 @@ md5sum /etc/ssh/ssh_host_*
 
 md5sum /etc/ssh/backup-keys/ssh_host_* 
 
-read -p "Please check the md5sums above\nPress any key to continue ..."  
+read -p "Please check the md5sums above, then press any key to continue ..."  
 
 read -t 2 -p "Installing updates and Tools" 
 
