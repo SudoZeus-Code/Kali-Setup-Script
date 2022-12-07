@@ -45,9 +45,7 @@ apt install locate
 
 apt-get install terminator -y 
 
-apt-get install cherrytree -y 
-
-apt-get install filezilla -y  
+apt-get install cherrytree -y  
 
 read -t 5 -p "Opening Visual Studio Code in a Browser" 
 
