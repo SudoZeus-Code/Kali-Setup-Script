@@ -7,6 +7,8 @@ fi
 
 cd $HOME 
 
+/usr/bin/xdg-user-dirs-update
+
 echo "Resetting kali pass" 
 
 passwd kali  
@@ -48,12 +50,18 @@ apt-get install cherrytree -y
 apt-get install filezilla -y  
 
 read -t 5 -p "Opening Visual Studio Code in a Browser" 
+
+chown root /home/kali/.Xauthority
+
 firefox https://code.visualstudio.com/Download#
 
 read -p "Once you have downloaded the specific package press any key" 
 
-#code_1.73.1-1667967334_amd64
-apt install ./code_[0-9].[0-100].[0-9]-[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_amd64.deb
+cd /root/Downloads
+
+chmod +x code_*_amd64.deb
+
+apt install ./code_*_amd64.deb
 
 #ohmyzsh 
 
